@@ -1,12 +1,1 @@
-{
-  "auto_increment": 1,
-  "data": [
-    {
-      "name": "Shakil Anwar",
-      "email": "shakilanwar1998@gmail.com",
-      "password": "$2y$10$GaKqGO83gdNdXg\/ijetIt.Y25e9NLakH8.AuNIABZmhnI602A9uH.",
-      "slug": "befb8e",
-      "id": 1
-    }
-  ]
-}
+{"auto_increment":2,"data":[{"name":"Shakil Anwar","email":"shakilanwar1998@gmail.com","password":"$2y$10$GaKqGO83gdNdXg\/ijetIt.Y25e9NLakH8.AuNIABZmhnI602A9uH.","slug":"befb8e","id":1},{"name":"Shihabun Sakib","email":"shiba@gmail.com","password":"$2y$10$PeX7rmNK60rAts3B9oC3quDKtLg\/nntrfeM36NDGBh7t9EAHrwKN.","slug":"0e8b39","id":2}]}
