@@ -21,6 +21,21 @@ switch ($request) {
         $controller->index();
         break;
 
+    case '/post-login':
+        $controller = new AuthController();
+        $controller->postLogin();
+        break;
+
+    case '/register':
+        $controller = new AuthController();
+        $controller->register();
+        break;
+
+    case '/post-register':
+        $controller = new AuthController();
+        $controller->postRegister();
+        break;
+
     default:
         http_response_code(404);
         break;

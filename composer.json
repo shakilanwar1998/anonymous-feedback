@@ -17,5 +17,7 @@
             "email": "shakilanwar1998@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-json": "*"
+    }
 }
