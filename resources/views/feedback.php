@@ -13,7 +13,7 @@
 
                 <div class="mt-10 mx-auto w-full max-w-xl">
                     <form class="space-y-6" action="/post-feedback" method="POST">
-                        <input type="hidden" name="user_id" value="<?php $data['user']['id']; ?>">
+                        <input type="hidden" name="user_id" value="<?php echo $data['user']['id']; ?>">
                         <div>
                             <label for="feedback" class="block text-sm font-medium leading-6 text-gray-900">Don't hesitate, just do it!</label>
                             <div class="mt-2">
