@@ -1,0 +1,12 @@
+{
+  "auto_increment": 1,
+  "data": [
+    {
+      "name": "Shakil Anwar",
+      "email": "shakilanwar1998@gmail.com",
+      "password": "$2y$10$GaKqGO83gdNdXg\/ijetIt.Y25e9NLakH8.AuNIABZmhnI602A9uH.",
+      "slug": "befb8e",
+      "id": 1
+    }
+  ]
+}

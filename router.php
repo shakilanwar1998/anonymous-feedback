@@ -1,8 +1,9 @@
 <?php
 
 use App\Controllers\AuthController;
+use App\Controllers\FeedbackController;
 use App\Controllers\HomeController;
-use App\Controllers\AboutController;
+use App\Controllers\DashboardController;
 
 $request = $_SERVER['REQUEST_URI'];
 
@@ -11,14 +12,19 @@ switch ($request) {
         $controller = new HomeController();
         $controller->index();
         break;
-    case '/about':
-        $controller = new AboutController();
+    case '/dashboard':
+        $controller = new DashboardController();
         $controller->index();
         break;
 
     case '/login':
         $controller = new AuthController();
         $controller->index();
+        break;
+
+    case '/logout':
+        $controller = new AuthController();
+        $controller->logout();
         break;
 
     case '/post-login':
@@ -34,6 +40,22 @@ switch ($request) {
     case '/post-register':
         $controller = new AuthController();
         $controller->postRegister();
+        break;
+
+    case '/post-feedback':
+        $controller = new FeedbackController();
+        $controller->store();
+        break;
+
+    case '/feedback-success':
+        $controller = new FeedbackController();
+        $controller->success();
+        break;
+
+    case (bool)preg_match('#^/feedback(?:/([^/]+))?$#', $request, $matches):
+        $controller = new FeedbackController();
+        $param = $matches[1] ?? null;
+        $controller->index($param);
         break;
 
     default:

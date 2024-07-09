@@ -24,7 +24,11 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="/login" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <a href="/logout" class="text-sm font-semibold leading-6 text-gray-900">Log out <span aria-hidden="true">&rarr;</span></a>
+            <?php else: ?>
+                <a href="/login" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+            <?php endif; ?>
         </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
